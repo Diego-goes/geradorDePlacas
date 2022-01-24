@@ -1,0 +1,448 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font: normal 20pt montserrat;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #5097FB, #00163B);
+}
+label{
+    cursor: pointer;
+}
+header{
+    font: normal 20pt montserrat;
+    letter-spacing: 1px;
+    text-align: center;
+}
+header h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+#hrTitulo{
+    width: 700px;
+    margin: auto;
+}
+#sectionInicio{
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    width: 700px;
+}
+section #placa_modelo{
+    width: 500px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.divs_botoes{
+    justify-content: space-between;
+    width: 450px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+}
+#botao_criar{
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font: bold 15pt montserrat;
+    background-color: #eea243;
+    border-radius: 10px;
+    color: #0d3b66;
+}
+#botao_criar:hover{
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font: bold 15pt montserrat;
+    background-color: #fdb210;
+    border-radius: 10px;
+    color: #0d3b66;
+}
+#botao_criar:active{
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font: bold 15pt montserrat;
+    background-color: #eea243;
+    border-radius: 10px;
+    color: #0d3b66;
+}
+#botao_favoritos{
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font: normal 15pt montserrat;
+    background-color: rgb(5, 54, 109);
+    border-radius: 10px;
+    color: white;
+}
+#botao_favoritos:hover{
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font: normal 15pt montserrat;
+    background-color: #03203b;
+    border-radius: 10px;
+    color: white;
+}
+#botao_favoritos:active{
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font: normal 15pt montserrat;
+    background-color: #0d3b66;
+    border-radius: 10px;
+    color: white;
+}
+#linksPaginas{
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 300px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+#editarFav{
+    margin-top: 10px;
+    background-color: #13bbb3;
+    border-radius: 8px;
+    padding: 5px;
+    padding-inline: 20px;
+    color: white;
+    font: normal 13pt montserrat;
+    cursor: pointer;
+    border: none;
+}
+#voltarFav{
+    width: 65px;
+    background-color: #eea243;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    padding-inline: 20px;
+    text-decoration: none;
+    color: white;
+    font: normal 13pt montserrat;
+    cursor: pointer;
+}
+#limparFav{
+    margin-top: 10px;
+    background-color: #f15a5a;
+    border-radius: 8px;
+    padding: 5px;
+    padding-inline: 20px;
+    text-decoration: none;
+    color: white;
+    font: normal 13pt montserrat;
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+#concluirEdicao{
+    margin-top: 10px;
+    background-color: #13bb6d;
+    border-radius: 8px;
+    padding: 5px;
+    padding-inline: 20px;
+    color: white;
+    font: normal 13pt montserrat;
+    cursor: pointer;
+    border: none;    
+    display: none;
+}
+#sectionFavoritos{
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    width: 700px;
+}
+#divFavoritos{
+    margin: auto;
+    display: flex;
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    width: 450px;
+    justify-content: center;
+    font-size: 15pt;
+}
+#sectionFavoritos h2{
+    color: #091d30;
+    margin: 0px;
+    margin-top: 25px;
+    margin-inline: 40px;
+}
+#sectionFavoritos img{
+    margin: 0px;
+    width: 50px;
+    margin-top: 20px;
+}
+#sectionGerar{
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    font: normal 20pt montserrat;
+    margin-bottom: 100px;
+}
+#sectionGerar p{
+    margin: 0px;
+}
+#divGerar1{
+    background-color: white;
+    border-radius: 25px;
+    border-bottom-right-radius: 0px;
+    padding: 20px; 
+    text-align: center;
+}
+#divGerar1 #qtdPlacas{
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #c7d4e0;
+    width: 100px;
+    text-align: center;
+    margin-inline: 30px;
+    padding: 3px;
+}
+#buttonGerarTop{
+    background-color: rgb(19, 187, 179);
+    border-radius: 8px;
+    padding: 5px;
+    padding-inline: 20px;
+    color: white;
+    font: normal 13pt montserrat;
+    cursor: pointer;
+    border: none;
+}
+#buttonGerar:hover{
+    background-color: rgb(79, 224, 217);
+    padding: 5px;
+    padding-inline: 20px;
+    color: white;
+    font: normal 13pt montserrat;
+    cursor: pointer;
+    border: none;
+}
+#buttonGerar:active{
+    background-color: rgb(49, 185, 179);
+    padding: 5px;
+    padding-inline: 20px;
+    color: white;
+    font: normal 13pt montserrat;
+    cursor: pointer;
+    border: none;
+}
+#categorias{
+    color: gray;
+    font: normal 16pt montserrat;
+    text-align: left;
+    padding-left: 45px;
+    display: flex;
+}
+#divRadios{
+    width: 250px;
+    margin-left: 135px;
+}
+#divRadios input{
+    margin-left: 25px;
+}
+#divGerar2{
+    visibility: hidden;
+    background-image: linear-gradient(rgb(191, 208, 255),rgb(255, 255, 255));
+    border-bottom-left-radius: 25px;
+    height: 0px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#categorias1{
+    width: 360px;
+}
+#categorias2{
+    width: 130px;
+}
+#categorias3{
+    background-color: #40a8ce;
+    margin-left: 10px;
+    width: 2px;
+}
+#categorias4{
+    width: 250px;
+    margin-left: 20px;
+}
+#divGerar3{
+    background-color: rgba(255, 255, 255, 0.623);    
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 55px;
+    width: 300px;
+    margin-left: 500px;
+    text-align: center;
+}
+#limparLista{
+    margin-top: 10px;
+    background-color: rgb(241, 90, 90);
+    border-radius: 8px;
+    padding: 5px;
+    padding-inline: 20px;
+    text-decoration: none;
+    color: white;
+    font: normal 13pt montserrat;
+    border: none;
+    cursor: pointer;
+}
+#divGerar3 a{
+    margin-left: 5px;
+    background-color: #0d3b66;
+    border-radius: 8px;
+    padding: 5px;
+    padding-inline: 20px;
+    text-decoration: none;
+    color: white;
+    font: normal 13pt montserrat;
+    border: none;
+}
+#categorias1{
+    font: lighter 15pt montserrat;
+    color: #808080;
+}
+#categorias1 p{
+    text-align: left;
+    padding: 5px;
+    margin-left: 5px;
+}
+#categorias1 h2{
+    margin-top: 0px;
+    font-weight: 200;
+    text-align: left;
+    color: #2e8cad;
+}
+#categorias1 small{
+    font-size: 8pt;
+}
+#categorias1 label{
+    cursor: pointer;
+}
+#categorias1 input{
+    cursor: pointer;
+}
+#categorias2 p{
+    font-size: 13pt;
+    color: #2e8cad;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+.qtdCategorias2{
+    visibility: hidden;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #c7d4e0;
+    width: 60px;
+    margin-inline: 30px;
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+#categorias4 h3{
+    margin-top: 48px;
+    margin-bottom: 5px;
+    color: #2e8cad;
+}
+#categorias4 hr{
+    margin-top: 5px;
+    width: 130px;
+    border-color:  #40a8ce;;
+}
+#categorias4 p{
+    margin-top: 30px;
+    font-size: 23pt;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#categorias4 small{
+    color: #808080;
+    font-size: 15pt;
+    font-weight: 100;
+}
+#buttonGerarBottom{
+    background-color: rgb(19, 187, 179);
+    border-radius: 8px;
+    padding: 5px;
+    padding-inline: 20px;
+    color: white;
+    font: normal 13pt montserrat;
+    cursor: pointer;
+    border: none;
+}
+#sectionPlacasGerar{
+    width: 1100px;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: solid 10px rgba(255, 255, 255, 0.685);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.205);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363),
+    inset 0px 0px 10px rgba(0, 0, 0, 0.363) ;
+    margin: auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+#placasFavoritas{
+    width: 1100px;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: solid 10px rgba(255, 255, 255, 0.685);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.205);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363),
+    inset 0px 0px 10px rgba(0, 0, 0, 0.363) ;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+footer{
+    background-color: #2424212c;
+    font: italic 15pt monospace;
+    color: #4c7ad6;
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+footer p {
+    margin: 0px;
+}
+footer a {
+    color: #13bbb3;
+}

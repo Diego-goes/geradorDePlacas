@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de placas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylePlaca.css">
+</head>
+
+<body onload="carregarFav()">
+    <script src="js/script.js"></script>
+    <header>
+        <h1>
+            <a href="index.html">GERADOR DE PLACAS</a>
+        </h1>
+    </header>
+    <hr id="hrTitulo">
+    <section id="sectionFavoritos">
+        <div id="divFavoritos">
+            <img src="images/icons/icon-favorito.png" alt="">
+            <h2>FAVORITOS</h2>
+            <img src="images/icons/icon-favorito.png" alt="">
+        </div>
+        <div id="linksPaginas">
+            <input type="button" id="limparFav" value="LIMPAR" onclick="limparFav()">
+            <a href="javascript:history.back()" id="voltarFav">VOLTAR</a>
+            <input type="button" id="editarFav" value="EDITAR" onclick="editarFav()">
+            <input type="button" id="concluirEdicao" value="CONCLUIR" onclick="concluirEdicao()">
+        </div>
+    </section>
+    <section id="placasFavoritas">
+
+    </section>
+    
+    <footer>
+        <p>
+            &copy; Programmed by <a href="https://github.com/Diego-goes" target="_blank">Diego Góes</a>
+        </p>
+    </footer>
+    <hr style="visibility: hidden;">
+</body>
+
+</html>

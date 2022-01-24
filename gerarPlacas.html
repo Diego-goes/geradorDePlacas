@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de placas</title>
+    <link rel="stylesheet" href="css/stylePlaca.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadGerar()">
+    <script src="js/script.js"></script>
+    <header>
+        <h1>
+            <a href="index.html">GERADOR DE PLACAS</a>
+        </h1>
+    </header>
+    <hr id="hrTitulo">
+    <section id="sectionGerar">
+        <div id="divGerar1">
+            <p id="cabecalhoP">Quantas placas deseja gerar?
+                <input type="number" step="1" onkeypress="return event.charCode >= 48" min="1" id="qtdPlacas"
+                    placeholder="Ex: 1">
+                <input type="button" value="CRIAR" id="buttonGerarTop" onclick="criarGerar1()">
+            </p>
+            <hr id="cabecalhoHr">
+            <div id="categorias">
+                <p>
+                    Categoria personalizada?
+                <div id="divRadios">
+                    <label>
+                        <input type="radio" name="radioGerar1" id="radioSim" onclick="mudarFormulario()">
+                        Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="radioGerar1" id="radioNao" checked onclick="mudarFormulario()">
+                        Não
+                    </label>
+                </div>
+                </p>
+            </div>
+        </div>
+        <div id="divGerar2">
+            <div id="categorias1">
+                <h2>CATEGORIA:</h2>
+                <label>
+                    <p>
+                        <input type="checkbox" name="ckCategoria1" id="checkbox1_Cat1" onclick="alternarInputCat2()">
+                        Particular <small style="color: black;">( Preta )</small>
+                    </p>
+                </label>
+                <label>
+                    <p>
+                        <input type="checkbox" name="ckCategoria1" id="checkbox2_Cat1" onclick="alternarInputCat2()">
+                        Comercial <small style="color: #f51f46;">( Vermelha )</small>
+                    </p>
+                </label>
+                <label>
+                    <p>
+                        <input type="checkbox" name="ckCategoria1" id="checkbox3_Cat1" onclick="alternarInputCat2()">
+                        Oficial / Representação <small style="color: blue;">( Azul )
+                        </small>
+                    </p>
+                </label>
+                <label>
+                    <p>
+                        <input type="checkbox" name="ckCategoria1" id="checkbox4_Cat1" onclick="alternarInputCat2()">
+                        Diplomático / Consular <small style="color: rgb(255, 217, 0);">( Dourada )</small>
+                    </p>
+                </label>
+                <label>
+                    <p>
+                        <input type="checkbox" name="ckCategoria1" id="checkbox5_Cat1" onclick="alternarInputCat2()">
+                        Especiais <small style="color: rgb(0, 230, 0);">( Verde )</small>
+                    </p>
+                </label>
+                <label>
+                    <p>
+                        <input type="checkbox" name="ckCategoria1" id="checkbox6_Cat1" onclick="alternarInputCat2()">
+                        Coleção <small style="color: silver;">( Cinza Prateado )</small>
+                    </p>
+                </label>
+            </div>
+            <div id="categorias2">
+                <p>Quantidade:</p>
+                <input type="number" class="qtdCategorias2" id="qtdPretas" oninput="exibirTotalPlacas()" step="1"
+                    onkeypress="return event.charCode >= 48" min="1" placeholder="Ex: 1">
+                <input type="number" class="qtdCategorias2" id="qtdVermelhas" oninput="exibirTotalPlacas()" step="1"
+                    onkeypress="return event.charCode >= 48" min="1" placeholder="Ex: 1">
+                <input type="number" class="qtdCategorias2" id="qtdAzuis" oninput="exibirTotalPlacas()" step="1"
+                    onkeypress="return event.charCode >= 48" min="1" placeholder="Ex: 1">
+                <input type="number" class="qtdCategorias2" id="qtdDouradas" oninput="exibirTotalPlacas()" step="1"
+                    onkeypress="return event.charCode >= 48" min="1" placeholder="Ex: 1">
+                <input type="number" class="qtdCategorias2" id="qtdVerdes" oninput="exibirTotalPlacas()" step="1"
+                    onkeypress="return event.charCode >= 48" min="1" placeholder="Ex: 1">
+                <input type="number" class="qtdCategorias2" id="qtdCinzas" oninput="exibirTotalPlacas()" step="1"
+                    onkeypress="return event.charCode >= 48" min="1" placeholder="Ex: 1">
+            </div>
+            <div id="categorias3">
+
+            </div>
+            <div id="categorias4">
+                <h3>TOTAL:</h3>
+                <hr id="hrTotalPlacas">
+                <p id="pTotalCat4">0 <small>Placas</small></p>
+                <input type="button" value="CRIAR" id="buttonGerarBottom" onclick="criarCat4()">
+            </div>
+        </div>
+        <div id="divGerar3">
+            <input type="button" id="limparLista" value="LIMPAR" onclick="limparLista(`sectionPlacasGerar`)">
+            <a href="favoritos.html">FAVORITOS</a>
+        </div>
+    </section>
+    <section id="sectionPlacasGerar">
+    </section>
+    <footer>
+        <p>
+            &copy; Programmed by <a href="https://github.com/Diego-goes" target="_blank">Diego Góes</a>
+        </p>
+    </footer>
+    <hr style="visibility: hidden;">
+</body>
+
+</html>

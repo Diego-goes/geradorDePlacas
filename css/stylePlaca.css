@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "FE-FONT";
+    src: url(font/FE-FONT.TTF);
+ }
+ body{
+    background-image: linear-gradient(to right, #5097FB, #00163B);
+ }
+.placa{
+    margin: 10px;
+    width: 500px;
+    height: 150px;
+    border-color: #ca0000;
+    border: 9px;
+    border-style: solid;
+    border-radius: 25px;
+    background-color: rgb(30, 32, 37);
+    margin-bottom: 110px;
+}
+.topPlaca{
+    width: 500px;
+    height: 50px;
+    background-color: rgb(20, 48, 173);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+}
+.topPlaca .pais{
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 130px;
+    font-size: 17pt;
+}
+.pais p {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.logo-mercosul{
+    width: 70px;
+    margin-left: 10px;
+}
+.logo-brasil{
+    width: 45px;
+    height: 30px;
+    margin-left: 135px;
+    margin-top: 5px;
+    border: 3px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: aliceblue;
+}
+.bottonPlaca{
+    width: 500px;
+    height: 100px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+}
+.bottonPlaca .numeracao{
+    font: normal 70pt "FE-font";
+}
+.numeracao p {
+    margin-top: 0px;
+    margin-left: 10px
+}
+.bottonPlaca .nacionalidade{
+    font-weight: bolder;
+    font-size: 15pt;
+    margin-top: 70px;
+    margin-left: 7px;
+    color: black;
+}
+#favoritar{
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 100px;
+    height: 60px;
+    margin-top: 9px;
+    margin-bottom: 100px;
+    margin-left: 386px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#favoritar img{
+    width: 30px;
+    text-align: center;
+    margin-inline: 35px;
+    margin-top: 15px;
+}
+#favoritar img:hover{
+    width: 35px;
+    text-align: center;
+    margin-inline: 32px;
+    margin-top: 14px;
+}
